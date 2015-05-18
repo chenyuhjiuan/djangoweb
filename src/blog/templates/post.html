@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+<br/>
+<h3>&nbsp;&nbsp;{{post.title}}</a></h3>
+<div style="color: #FF99FF;" class = "post_meta">
+	on<i> {{ post.date }} </i>
+</div>
+<p align="right" ><strong>Go back to</strong> <a href="/" style="color:blue;"><strong><i>Home</i></strong></a> or 
+</strong> <a href="/blog" style="color:blue;"><strong><i>Blog</i></strong></a>
+ or <a href="/blog/archieves" style="color:blue" > 
+<strong><i>Archieves &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i></strong></a></p>
+<div class = "post_body"></p>
+	{{post.body|safe|linebreaks}}
+<br>
+
+</div>
+<br/><br/>
+{% endblock %}

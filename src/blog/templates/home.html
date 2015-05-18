@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+<aside class="sideInfo">
+		<article>
+			<h3>&nbsp;Recent News</h3>
+			{% for post in object_list %}
+			<p>&nbsp;{{ post.date|date:"Y-m-d"}}&nbsp;<a href="/blog/{{post.id}}">{{ post.title}}</a>&nbsp;</p>
+			{% endfor %}
+		</article>
+</aside>
+<h3 style="color:#DA6CB5; " align="right"><i>&raquo; Home </i></h3>
+<div class="mainContent">
+<section>
+<div class="content">
+<p><strong style="color:#DA6CB5"><i>Welcome to Django Example.</i></strong> I was a programming student of TechLeap at Montgomery College in Maryland. I took Python class and
+		practiced editing this website by using Django framework. The news sources are mainly from yahoo.com and msn.com. All news is for personal usage only.
+</p> <br>
+
+<img  class="homeimg" src="/static/img/mountain.jpg" alt="Flower" width=400 height=300 >
+
+
+
+
+
+		<p> The dynamic web pages here are mainly managed by Django Admin. Once I set up the whole project for the website,
+		I can easily install the posts and polls at Django Admin and the established features will
+		appear in each related page. Django is really a convenient and powerful tool.
+</p>
+<p>I have two other websites. Please visit them at <a style="color:blue;" href=" http://htmlcssjavascript-emilymarinovich.rhcloud.com/" target="_blank">Examples of HTML, CSS, JavaScript and JQuery</a> and
+<a style="color:blue;" href=" http://phpmysql-emilymarinovich.rhcloud.com/ " target="_blank" >Examples of PHP and MySQL.</a>
+ Thank you for your visiting.
+</p>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="/static/bootstrap-3.2.0-dist/js/bootstrap.min.js"></script>
+</div>
+	</section>
+
+	</div>
+<br/><br/>
+
+
+
+{% endblock %}

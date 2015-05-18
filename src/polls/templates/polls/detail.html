@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<br>
+<marquee behavior="alternate" onMouseOver="this.stop()" onMouseOut="this.start()" width="500" >Please mouse on me and vote! </marquee>
+<br>
+<p align="right" ><strong>Go back to</strong> <a href="/polls" style="color:blue;"><strong><i>Polls</i></strong></a> </p>
+
+
+<h2 style="color:#DA6CB5;">{{ poll.question }}</h2>
+<br>
+
+{% if error_message %}<p><strong style="color:red;">{{ error_message }}</strong></p>{% endif %}
+
+<form class="detailform" action="{% url 'polls:vote' poll.id %}" method="post">
+{% csrf_token %}
+{% for choice in poll.choice_set.all %}
+	<input type="radio" name="choice" id="choice{{forloop.counter}}" value="{{choice.id}}" />
+	<label for="choice{{ forloop.counter }}">{{choice.choice_text}}</label><br/>
+{% endfor %}<br/>
+	<input type="submit" value="Vote">
+</form>
+<br/><br/>
+{% endblock %}

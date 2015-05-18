@@ -1,0 +1,207 @@
+body{
+	color:#000305;
+	font-size: 80%;
+	font-family: "Lucida Sans Unicode";
+	/*margin: 15px auto;*/
+	line-height: 1.5;
+	text-align: left;
+
+
+}
+
+a{
+	text-decoration: none;
+}
+
+a:link, a:visited{
+	color:black;
+}
+
+a:hover, a:active{
+	color: #797979;
+}
+
+.body{
+	margin: 15px auto;
+	width: 75%;
+	clear: both;
+}
+
+.mainHead nav{
+	background-color: black;
+	height: 80px;
+	border-radius: 7px;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+}
+
+.mainHead nav ul{
+	list-style: none;
+	margin: 0 auto;
+	margin-left: 150px;
+}
+
+.mainHead nav ul li{
+	float: left;
+	display: inline;
+	font-size: 200%;
+}
+
+.mainHead nav a:link, .mainHead nav a:visited{
+	color: #FFF;
+	display: inline-block;
+	padding: 10px 25px;
+	height: 60px;
+}
+
+.mainHead nav .active a:link,
+.mainHead nav .active a:visited,
+.mainHead nav a:hover,
+.mainHead nav a:active{
+	background-color: #DA6CB5;
+	text-shadow: none;
+}
+.logoText{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	color: black;
+	padding-bottom: 2em;
+    background: linear-gradient(to right,#F5D6EB, #D6E0FF,#DA6CB5);
+	border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+	height: 100px;
+}
+
+.mainHeader{
+	font-size: 375%;
+	font-family: "Lucida Handwriting", cursive;
+	font-weight: bold;
+    color: #989898;
+    text-shadow: 2px 3px 0 black;
+
+    margin-left: 200px;
+	/*margin-bottom: 0.25em;*/
+	margin-top: 50px;
+
+
+}
+.sideInfo{
+	width: 25%;
+	float: left;
+	margin: 1% 0% 1% 0%;
+	border-radius: 7px;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	background-color: #FFFCFF;
+
+}
+.sideInfo p {
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-bottom: 7px;
+}
+
+.sideInfo a:link, .sideInfo a:visited{
+	color: blue;
+
+}
+
+.mainContent{
+	line-height: 20px;
+	border-radius: 7px;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	background-color: #FFFCFF;
+}
+
+.content{
+	width: 70%;
+	float: right;
+	padding: 2% 2%;
+	background-color: #FFFCFF;
+	margin: 1% 0% 1% 1%;
+	border-radius: 7px;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+
+}
+
+.postInfo{
+	font-size: italic;
+	font-size: 75%;
+	color: #989898;
+}
+.mainFooter{
+	margin-top: 20px;
+ 	width: 100%;
+	float: left;
+
+	border-radius: 7px;
+	/* margin: 1% 0% 1% 1%; */
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	background-color: #797979;
+
+}
+
+.mainFooter p{
+	width: 100%;
+	margin: 2% auto;
+	color: #fff;
+	margin-left: 20px;
+
+
+}
+
+
+
+/* section */
+section, aside, h1, h2, p, ul {
+	margin: 0;
+	padding: 0;
+}
+
+/*section {
+	width: 700px;
+	padding-right: 20px;
+	float: right;
+	margin-top: 1.5em;
+	margin-bottom: 1em;
+	margin-right: 70px;
+	margin-left: 10px;
+}
+
+*/
+
+section img {
+	float: right;
+	/*margin: 0.3em 1.5em 0.3em 0.3em;*/
+	margin-left: 20px;
+}
+
+section p { padding-bottom: 0.5em;
+		/*margin: 0.3em 1.5em 0.3em 0.3em;*/
+ }
+
+section strong {
+
+	color: #005000;
+ }
+
+.homeimg{
+	border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+}
+
+
+.detailform{
+			margin-left:30px;
+}
+
+.pollresultul {list-style: none;}
+
+
+.pollresultli {margin-left: 30px;
+			  margin-bottom: 2px;
+}

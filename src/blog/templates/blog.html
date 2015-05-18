@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+
+<aside class="sideInfo">
+		<article>
+			<h3>&nbsp;Recent News</h3>
+			{% for post in object_list %}
+			<p>&nbsp;{{ post.date|date:"Y-m-d"}}&nbsp;<a href="/blog/{{post.id}}">{{ post.title}}</a>&nbsp;</p>
+			{% endfor %}
+		</article>
+	</aside>
+<div class="mainContent">
+<h3 style="color:#DA6CB5; background-color:white;" align="right"><i>&raquo; Blog </i></h3>
+{% for post in object_list %}
+
+		<div class="content">
+	<h3 ><a style="color:blue; " href="/blog/{{post.id}}"> {{post.title}}</a></h3>
+	<div class = "post_meta">
+	on<i> {{ post.date }} </i>
+	</div>
+
+	<div class = "post_body">
+	{{post.body|safe|linebreaks}}
+	<br/>
+	</div>
+</div>
+{% endfor %}
+
+
+</div>
+<br/>
+
+{% endblock %}

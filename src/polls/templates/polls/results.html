@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+<br>
+<marquee behavior="alternate" onMouseOver="this.stop()" onMouseOut="this.start()" width="500" >Thank you for your voting. </marquee>
+<p align="right" ><strong>Go back to</strong> <a href="/polls" style="color:blue;"><strong><i>Polls</i></strong></a> </p>
+<h2 style="color:#DA6CB5;" >The vote result for &quot; {{ poll.question}} &quot; is</h2>
+<br>
+
+<ul class="pollresultul">
+{% for choice in poll.choice_set.all %}
+	<li class="pollresultli">*&nbsp;{{ choice.choice_text}} -- {{ choice.votes}} vote{{choice.votes|pluralize }}</li>
+{% endfor %}
+</ul>
+<br>
+<h3><a href="{% url 'polls:detail' poll.id %}" style="color: blue;">Vote again?</a><h3>
+
+<br/><br/>
+{% endblock %}

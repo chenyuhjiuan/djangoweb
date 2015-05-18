@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+<br>
+<h2>Please select one topic and vote.</h2>
+<br>
+{% if latest_poll_list %}
+	<div>
+	{% for poll in latest_poll_list %}
+		<h2 style="color:blue;">&nbsp;&nbsp;. <a style="color:blue;" href="{% url 'polls:detail' poll.id %}"> {{ poll.question}}</a> </h2>
+	{% endfor %}
+	</div>
+{% else %}
+	<p> No polls are available.</p>
+{% endif %}
+<br/><br/>
+
+{% endblock %}
+	

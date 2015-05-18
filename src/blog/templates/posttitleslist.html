@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h3 style="color:#DA6CB5; " align="right"><i>&raquo; Archieves </i></h3>
+{% for post in object_list %}
+<p style="margin-bottom:3px;">&nbsp;&nbsp;{{ post.date }}&nbsp;&nbsp;<a style="color:blue;" href="/blog/{{post.id}}">{{post.title}}</a></p>
+ 
+{% endfor %}
+<br/><br/>
+{% endblock %}
