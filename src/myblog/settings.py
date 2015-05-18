@@ -61,8 +61,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-		'USER': 'emily',
-		'PASSWORD': '123',
+		'USER': 'root',
+		'PASSWORD': 'admin',
     }
 }
 
